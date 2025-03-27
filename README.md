@@ -1,10 +1,14 @@
 # Language Models Visualised
 
-[LIVE PAGE HERE](https://kokodoko.github.io/llm-3d/)
+🔥 [LIVE PAGE HERE](https://kokodoko.github.io/llm-3d/) 🔥
+
+<br><bR><bR>
 
 ## An AI-assisted experiment
 
 The goal of this experiment was to find out if words from a language model can be visualised in 3D, while also learning about various related algorithms and models. All of this using AI code generation tools. [See the footer for some prompting tips!](#footer)
+
+<br><bR><bR>
 
 ## Words as vectors
 
@@ -15,11 +19,17 @@ A language model works by converting text into vectordata (a list of numbers), w
 ```
 If we can somehow reduce this array of numbers to 3, we can place the words in a 3D space.
 
+<br><bR><bR>
+
+
 ## Too many dimensions
 
 Depending on the language model you use, the amount of numbers (dimensions) in a vector can be quite large. [OpenAI's ADA](https://platform.openai.com/docs/guides/embeddings) model will generate 1536 numbers, and [HuggingFace MiniLM-L6](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) will generate 384 numbers for one prompt (a word or a sentence)
 
 Reducing these vectors down to 3 proved quite challenging. The problem is that advanced LLM's do not really work by assigning vectors to single words. These models are very good at finding complex relationships in complete narratives and sentences. Also, single words can consist of multiple tokens.
+
+<br><bR><bR>
+
 
 ### Comparing relations
 
@@ -35,6 +45,9 @@ The race track has many cars <--------> Shakespeare wrote plays about love
 ```
 
 HuggingFace models can be loaded locally using [tranformers.js](https://huggingface.co/docs/hub/en/transformers-js)
+
+<br><bR><bR>
+
 
 ## A simpler model
 
@@ -53,6 +66,9 @@ findRelatedWords("cat")
 ]
 ```
 
+<br><bR><bR>
+
+
 ### Reducing dimensions
 
 To reduce these 50 dimensions to 3 we need a dimension reduction algorithm. ChatGPT suggested the [T-SNE](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding) and the [PCA](https://en.wikipedia.org/wiki/Principal_component_analysis) algorithms.
@@ -67,6 +83,9 @@ Experimenting proved that this [Javascript PCA library](https://github.com/mljs/
     1.5510818764700405
 ]
 ```
+
+<br><bR><bR>
+
 
 ## Vibe Coding
 
