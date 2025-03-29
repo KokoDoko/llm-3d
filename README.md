@@ -1,5 +1,7 @@
 # Language Models Visualised
 
+![cloud](./images/cloud.png)
+
 🔥 [LIVE PAGE HERE](https://kokodoko.github.io/llm-3d/) 🔥
 
 <br><bR><bR>

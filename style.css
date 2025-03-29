@@ -140,6 +140,19 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .copy, .copy a, .copy a:visited {
-    font-size:0.86em;
-    color:rgb(110, 110, 116);
+    font-size: 0.86em;
+    color: rgb(110, 110, 116);
+}
+
+dialog {
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    margin-top:5vh;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
 }
